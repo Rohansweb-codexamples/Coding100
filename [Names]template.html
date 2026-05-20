@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Kids Website</title>
+
+<style>
+  /* KIDS: Change colours here */
+  body { font-family: Arial, sans-serif; margin: 0; background: #f0f8ff; }
+  header { background: #4caf50; padding: 15px; text-align: center; color: white; font-size: 24px; }
+  nav { background: #ddd; padding: 10px; text-align: center; }
+  nav a { margin: 0 10px; text-decoration: none; font-weight: bold; color: #333; }
+  section { padding: 20px; max-width: 900px; margin: auto; }
+  h2 { color: #4caf50; }
+  img { max-width: 200px; margin: 10px; border: 2px solid #333; }
+  audio { display: block; margin: 10px 0; }
+  button { padding: 10px 20px; font-size: 16px; }
+</style>
+</head>
+
+<body>
+
+<header>My Awesome Kids Website</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#images">Images</a>
+  <a href="#music">Music</a>
+  <a href="#game">Game</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <h2>Home</h2>
+  <p>Welcome to my website! I can write anything I want here.</p>
+  <p>I can talk about my hobbies, my pets, my favourite games, and more.</p>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <h2>My Portfolio</h2>
+  <p>Here are some cool things I made:</p>
+  <ul>
+    <li>My best drawing</li>
+    <li>A LEGO spaceship</li>
+    <li>A story I wrote</li>
+  </ul>
+</section>
+
+<!-- IMAGES -->
+<section id="images">
+  <h2>My Images</h2>
+  <p>These are some pictures I like:</p>
+
+  <!-- KIDS: Replace these with your own images -->
+  <img src="https://via.placeholder.com/200" alt="Picture 1">
+  <img src="https://via.placeholder.com/200" alt="Picture 2">
+</section>
+
+<!-- MUSIC -->
+<section id="music">
+  <h2>My Music</h2>
+  <p>Here are some sounds or songs I like:</p>
+
+  <!-- KIDS: Replace song1.mp3 with your own file -->
+  <audio controls>
+    <source src="song1.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio controls>
+    <source src="song2.mp3" type="audio/mpeg">
+  </audio>
+</section>
+
+<!-- GAME -->
+<section id="game">
+  <h2>My Simple Game</h2>
+  <p>Click the button and see what happens!</p>
+
+  <button onclick="playGame()">Click me!</button>
+  <p id="result"></p>
+
+  <script>
+    function playGame() {
+      const messages = [
+        "You found treasure! 🪙",
+        "A dragon said hello! 🐉",
+        "You jumped over lava! 🌋",
+        "You found a secret door! 🚪"
+      ];
+      const random = Math.floor(Math.random() * messages.length);
+      document.getElementById("result").textContent = messages[random];
+    }
+  </script>
+</section>
+
+</body>
+</html>
 
